@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto y Pago - Mariscos Nat</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/pago.css">
+</head>
+<body>
+    <div class="background-overlay"></div>
+    
+    <div class="page-wrapper">
+        <header class="banner-header">
+            <div class="logo-area">
+                <img src="assets/logo_nat.jpg" alt="Logo Nat" class="main-logo">
+            </div>
+            <div class="text-area">
+                <div class="brand-group">
+                    <h1 class="brand-name">MARISCOS</h1>
+                    <h2 class="brand-nat">"Nat"</h2>
+                </div>
+                <p class="tagline">INFORMACIÓN DE PAGO Y CONTACTO DIGITAL</p>
+            </div>
+        </header>
+
+        <main class="content-sections">
+            <section class="glass-card">
+                <h3 class="card-header">REDES SOCIALES (SOCIAL MEDIA)</h3>
+                <div class="social-items">
+                    <a href="https://www.facebook.com/share/1DT1aBH1Di/" target="_blank" class="social-box">
+                        <i class="fab fa-facebook-f"></i>
+                        <span>Mariscos Nat</span>
+                    </a>
+                    <a href="https://www.instagram.com/mariscosnat1" target="_blank" class="social-box">
+                        <i class="fab fa-instagram"></i>
+                        <span>@MariscosNat1</span>
+                    </a>
+                    <a href="https://www.tiktok.com/@joaquin.anthony.n" target="_blank" class="social-box">
+                        <i class="fab fa-tiktok"></i>
+                        <span>@joaquin.anthony.n</span>
+                    </a>
+                    <a href="https://wa.me/529671202060" target="_blank" class="social-box">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>967 120 2060</span>
+                    </a>
+                </div>
+            </section>
+
+            <section class="glass-card">
+                <h3 class="card-header">DATOS BANCARIOS (BANK DETAILS)</h3>
+                <div class="bank-list">
+                    <div class="bank-item">
+                        <div class="bank-info">
+                            <i class="fas fa-university"></i>
+                            <span>Banco: <b>BBVA</b></span>
+                        </div>
+                        <button class="copy-action" onclick="copy('BBVA')">
+                            <i class="far fa-copy"></i> COPIAR
+                        </button>
+                    </div>
+                    <div class="bank-item">
+                        <div class="bank-info">
+                            <i class="fas fa-credit-card"></i>
+                            <span>CLABE: <b>0121 2345 6789 0123 45</b></span>
+                        </div>
+                        <button class="copy-action" onclick="copy('012123456789012345')">
+                            <i class="far fa-copy"></i> COPIAR
+                        </button>
+                    </div>
+                    <div class="bank-item">
+                        <div class="bank-info">
+                            <i class="fas fa-user-circle"></i>
+                            <span>Titular: <b>Joaquin Anthony N.</b></span>
+                        </div>
+                        <button class="copy-action" onclick="copy('Joaquin Anthony N.')">
+                            <i class="far fa-copy"></i> COPIAR
+                        </button>
+                    </div>
+                    <div class="bank-item">
+                        <div class="bank-info">
+                            <i class="fas fa-file-invoice-dollar"></i>
+                            <span>Concepto: <b>PAGO NAT MARISCOS</b></span>
+                        </div>
+                        <button class="copy-action" onclick="copy('PAGO NAT MARISCOS')">
+                            <i class="far fa-copy"></i> COPIAR
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="app-footer">
+            <div class="home-indicator"></div>
+        </footer>
+    </div>
+
+    <script>
+        function copy(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                const btn = event.currentTarget;
+                const originalContent = btn.innerHTML;
+                btn.innerHTML = '<i class="fas fa-check"></i> COPIADO';
+                btn.classList.add('copied');
+                setTimeout(() => {
+                    btn.innerHTML = originalContent;
+                    btn.classList.remove('copied');
+                }, 2000);
+            });
+        }
+    </script>
+</body>
+</html>
