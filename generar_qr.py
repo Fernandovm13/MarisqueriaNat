@@ -22,8 +22,8 @@ def crear_qr(url, nombre_archivo, logo_path):
     img_qr.save(nombre_archivo)
     print(f"Archivo {nombre_archivo} generado.")
 
-link_menu = "https://tu-usuario.github.io/index.html"
-link_pago = "https://tu-usuario.github.io/pago.html"
+link_menu = "https://marisquerianat.velezmen.me/index.html"
+link_pago = "https://marisquerianat.velezmen.me/pago.html"
 
 crear_qr(link_menu, "qr_menu.png", "assets/logo_nat.jpg")
 crear_qr(link_pago, "qr_pago.png", "assets/logo_nat.jpg")
