@@ -50,10 +50,24 @@ body {
 
 .banner-header {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 10px;
     padding: 15px 0;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.header-bottom {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
 }
 
 .logo-area {
@@ -61,16 +75,14 @@ body {
 }
 
 .main-logo {
-    width: 160px;
-    height: 160px;
+    width: 180px;
+    height: 180px;
     object-fit: contain;
     border-radius: 50%;
     filter: drop-shadow(0 5px 15px rgba(0,0,0,0.2));
 }
 
-.text-area {
-    flex: 1;
-}
+/* .text-area removed in HTML restructure */
 
 .brand-group {
     position: relative;
