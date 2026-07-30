@@ -4,3 +4,5 @@ qr_menu.png
 qr_pago.png
 generar_pdf.py
 generar_qr.py
+generar_pdf_pago.py
+datos_pago.pdf
